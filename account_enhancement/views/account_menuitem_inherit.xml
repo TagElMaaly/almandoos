@@ -1,0 +1,7 @@
+<odoo>
+  <data>
+
+    <menuitem id="account.menu_action_move_out_receipt_type" active="False"/>
+
+  </data>
+</odoo>
