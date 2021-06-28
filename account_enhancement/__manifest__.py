@@ -16,15 +16,15 @@
     'category': 'Accounting/Accounting',
     'version': '0.1',
 
-    # any module necessary for this one to work correctly
     'depends': ['account'],
 
-    # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
+
         'views/account_menuitem_inherit.xml',
+        'views/account_move_view_inherit.xml',
+
     ],
-    # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],

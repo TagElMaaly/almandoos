@@ -1,7 +1,22 @@
 <odoo>
-  <data>
+    <data>
 
-    <menuitem id="account.menu_action_move_out_receipt_type" active="False"/>
+    <record id="action_sales_channel" model="ir.actions.act_window">
+        <field name="name">Sales Channel</field>
+        <field name="res_model">sales.channel</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add Sales Channel
+            </p>
+        </field>
+    </record>
 
-  </data>
+        <menuitem id="account.menu_action_move_out_receipt_type" active="False"/>
+        <menuitem id="sales_channel_menu" name="Sales Channel" parent="account.account_invoicing_menu"
+                  action="action_sales_channel" sequence="3"/>
+        <!--        <menuitem id="account.menu_action_account_payments_receivable" action="account.action_account_payments"-->
+        <!--                  sequence="20" name="Receipt" active="True"/>-->
+
+    </data>
 </odoo>
