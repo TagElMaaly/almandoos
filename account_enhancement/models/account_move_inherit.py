@@ -8,6 +8,10 @@ class AccountMoveInherit(models.Model):
 
     sales_channel = fields.Many2one(comodel_name='sales.channel', string="Sales Channel")
 
+    def unlink(self):
+        return models.Model.unlink(self)
+
+
 
 class SalesChannel(models.Model):
     _name = "sales.channel"
